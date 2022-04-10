@@ -31,3 +31,9 @@ environments:
         spark_python_task:
           python_file: "file://monte_carlo_demo/jobs/01_var_context.py"
           parameters: [ "--conf-file", "file:fuse://conf/test/sample.yml" ]
+      - name: "02_var_model"
+        <<:
+          - *basic-static-cluster
+        spark_python_task:
+          python_file: "file://monte_carlo_demo/jobs/02_var_model.py"
+          parameters: [ "--conf-file", "file:fuse://conf/test/sample.yml" ]
