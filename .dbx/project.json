@@ -1,0 +1,9 @@
+{
+    "environments": {
+        "default": {
+            "profile": "DEFAULT",
+            "workspace_dir": "tatiana.sennikova@databricks.com/dbx/monte_carlo_demo",
+            "artifact_location": "tatiana.sennikova@databricks.com/dbx/monte_carlo_demo"
+        }
+    }
+}
