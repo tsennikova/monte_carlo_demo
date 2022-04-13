@@ -1,0 +1,22 @@
+output_format: "delta"
+portfolio_table: tania.ws_portfolio
+stock_table: tania.ws_stock
+stock_return_table: tania.ws_stock_return
+market_return_table: tania.ws_market_return
+trial_table: tania.ws_monte_carlo
+
+experiment_path: /tatiana.sennikova@databricks.com/dbx/monte_carlo_demo
+
+date_str: 2019-06-01
+d_days: 90
+runs: 50000
+parallelism: 12
+confidenceVar: 95
+seed_init: 42
+
+feature_names:
+  SP500
+  NYSE
+  OIL
+  TREASURY
+  DOWJONES
