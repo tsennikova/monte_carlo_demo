@@ -4,10 +4,17 @@ stock_table: tania.ws_stock
 stock_return_table: tania.ws_stock_return
 market_return_table: tania.ws_market_return
 trial_table: tania.ws_monte_carlo
+portfolio_table: tania.ws_portfolio
+trial_table: tania.ws_monte_carlo
+trial_table_loc: dbfs:/mnt/mcdata/ws_monte_carlo_delta/
 
 experiment_path: /tatiana.sennikova@databricks.com/dbx/monte_carlo_demo
+model_path: /tmp/models.json
 
-date_str: 2019-06-01
+start_date_str: 2019-06-01
+sampling_date_point_str: 2020-03-01
+trail_date_str: 2020-05-11
+
 d_days: 90
 runs: 50000
 parallelism: 12

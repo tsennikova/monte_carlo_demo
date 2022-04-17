@@ -49,6 +49,12 @@ environments:
         spark_python_task:
           python_file: "file://monte_carlo_demo/jobs/var_train_job.py"
           parameters: [ "--conf-file", "file:fuse://conf/monte_carlo_conf.yaml" ]
+      - name: "var_evaluate_job"
+        <<:
+          - *basic-static-cluster
+        spark_python_task:
+          python_file: "file://monte_carlo_demo/jobs/var_evaluate_job.py"
+          parameters: [ "--conf-file", "file:fuse://conf/monte_carlo_conf.yaml" ]
       - name: "var_predict_job"
         <<:
           - *basic-static-cluster
